@@ -26,7 +26,7 @@
         if (isset($loggedUser)) {
 
           if ($loggedUser->admin == '1'){
-            echo '<a  class="btn btn-lg" href="?page=tournamentCreate&game=dragon ball"><b>Create Tournament</a>';
+            echo '<a  class="btn btn-lg" href="?page=tournamentCreate&game=dragonball"><b>Create Tournament</a>';
           } else {
             ?>
         
@@ -48,7 +48,7 @@ $conn2 = new mysqli($dbHostname, $dbUsername, $dbPassword, $dbDatabase);
 
 
    
-$sql = "SELECT * FROM `tournaments` WHERE `game` LIKE 'DRAGON BALL'";
+$sql = "SELECT * FROM `tournaments` WHERE `game` LIKE 'DRAGONBALL'";
 $result = $conn->query($sql);
 
 
